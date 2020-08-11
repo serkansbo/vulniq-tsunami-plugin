@@ -30,15 +30,10 @@ import com.google.tsunami.common.config.annotations.ConfigProperties;
 @ConfigProperties("plugins.vulniq_vuln_detector")
 final class VulnIQVulnDetectorConfig
 {
-
     String engineBaseUrl = "https://free.vulniq.com";
-    String reportingAppBaseUrl = "https://reporting-local.vulniq.com:38443";
 
     //access token to be used to call VulnIQ services
     String accessToken;
-
-    //VulnIQ API endpoint, do not change unless you know what you are doing
-    String ovalXMLUrl = "/api/oval/xml";
 
     //VulnIQ API endpoints, do not change unless you know what you are doing
     String vulnsByVPVUrl = "/api/vulnerability/list-by-vpv";
